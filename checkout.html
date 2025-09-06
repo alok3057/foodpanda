@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Foodie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCheckout()">
+  <header class="navbar">
+    <h1 class="logo">🛒 Checkout</h1>
+  </header>
+
+  <section class="checkout-section">
+    <h2>Order Summary</h2>
+    <div id="checkoutItems"></div>
+    <p><b>Total: ₹<span id="checkoutTotal">0</span></b></p>
+
+    <h3>Payment Method</h3>
+    <label><input type="radio" name="payment" value="COD" checked> Cash on Delivery</label><br>
+    <label><input type="radio" name="payment" value="Online"> Online Payment</label><br><br>
+
+    <button class="checkout-btn" onclick="confirmCheckout()">Confirm Order ✅</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

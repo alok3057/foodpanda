@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delivery Partner - Foodie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDeliveryData()">
+  <header class="navbar">
+    <h1 class="logo">🚴 Foodie Delivery</h1>
+  </header>
+
+  <div class="dashboard">
+    <p><b>Order ID:</b> <span id="deliveryOrderId"></span></p>
+    <p><b>Customer:</b> <span id="deliveryCustomer"></span></p>
+    <p><b>Payment:</b> <span id="deliveryPayment"></span></p>
+    <input type="text" id="deliveryOtp" placeholder="Enter Delivery OTP">
+    <button onclick="confirmDelivery()">Confirm Delivery ✅</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
