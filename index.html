@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foodie - User App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadUserMenu()">
+  <header class="navbar">
+    <h1 class="logo">🍴 Foodie momo </h1>
+	<h1 class="logo">9831316751-
+		Baidyabati Hooghly
+
+	</h1>
+    <input type="text" placeholder="Search food..." id="searchBox" onkeyup="searchMenu()">
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <section class="menu-section">
+    <h2>🍽️ Browse Menu</h2>
+    <div id="menuList" class="menu-grid"></div>
+  </section>
+
+  <aside id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart"></div>
+    <p><b>Total: ₹<span id="cartTotal">0</span></b></p>
+    <button class="checkout-btn" onclick="placeOrder()">Checkout ✅</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
